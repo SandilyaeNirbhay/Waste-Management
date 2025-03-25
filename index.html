@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Meta Information -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Smart Waste Management platform for efficient trash collection, recycling, and environmental monitoring.">
+  <meta name="keywords" content="Smart Waste, Waste Management, Recycling, Sustainability, Smart Bins, Environmental Monitoring">
+  <meta name="author" content="Smart Waste Management">
+  <title>Smart Waste - Efficient Waste Management Platform</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <!-- Header Section with Navigation -->
+  <header>
+    <nav>
+      <div class="logo">
+        <h1>SMART WASTE - Efficient Management Platform</h1>
+        <button id="menu-toggle" aria-label="Toggle Menu">&#9776;</button>
+        <ul id="nav-links">
+          <li><a href="#home">HOME</a></li>
+          <li><a href="#services">SERVICES</a></li>
+          <li><a href="#monitoring">LIVE MONITORING</a></li>
+          <li><a href="#contact">CONTACT</a></li>
+        </ul>
+      </div>
+      <div class="auth-buttons">
+        <button id="login-btn" class="btn-auth">Login</button>
+        <button id="signup-btn" class="btn-auth">Signup</button>
+      </div>
+      <button id="support-toggle" aria-label="Open Support Chat">Support Chat</button>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+      <h1 style="font-size: 50px;">Welcome to Smart Waste Management</h1>
+      <p style="font-size: 25px;">Optimizing waste collection through smart technology</p>
+      <a href="#services" class="btn">Explore Services</a>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+      <h2 class="service-card">Our Services</h2>
+      <div class="service-grid">
+        <article class="service-card">
+          <h3>Smart Bin Monitoring</h3>
+          <p>Real-time fill level monitoring for efficient collection.</p>
+          <a href="https://www.researchgate.net/publication/321725917_Smart_Bin_Internet-of-Things_Garbage_Monitoring_System" class="btn">Learn More</a>
+        </article>
+        <article class="service-card">
+          <h3>Recycling Solutions</h3>
+          <p>Advanced sorting and recycling technologies.</p>
+          <a href="https://www.suez.com/en/waste" class="btn">Learn More</a>
+        </article>
+        <article class="service-card">
+          <h3>Route Optimization</h3>
+          <p>AI-powered collection route planning.</p>
+          <a href="https://smartroutes.io/blogs/route-optimization-for-solid-waste-collection/" class="btn">Learn More</a>
+        </article>
+        <article class="service-card">
+          <h3>Waste Analytics</h3>
+          <p>Data-driven insights for better waste management.</p>
+          <a href="https://www.analytik-jena.in/industries-solutions/industries/environment/waste-analysis/" class="btn">Learn More</a>
+        </article>
+      </div>
+    </section>
+
+    <!-- Live Monitoring Section -->
+    <section id="monitoring" class="monitoring">
+      <h2>Live Waste Monitoring</h2>
+      
+      <div class="dashboard">
+        <div class="map-container">
+          <div id="waste-map" ></div>
+          <div class="map-legend">
+            <div><span class="legend-green"></span> Empty</div>
+            <div><span class="legend-yellow"></span> Half Full</div>
+            <div><span class="legend-red"></span> Needs Collection</div>
+          </div>
+        </div>
+        <div class="stats-container">
+          <div class="stat-card">
+            <h4>Bins Monitored</h4>
+            <p class="stat-value">1,247</p>
+          </div>
+          <div class="stat-card">
+            <h4>Collections Today</h4>
+            <p class="stat-value">83</p>
+          </div>
+          <div class="stat-card">
+            <h4>Recycling Rate</h4>
+            <p class="stat-value">68%</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+      <div class="contact-container">
+        <h2>Contact Us</h2>
+        <p>Need assistance or want to partner with us? Get in touch!</p>
+        <form id="contact-form" class="contact-form">
+          <div class="form-group">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" placeholder="Enter your name" required>
+          </div>
+          <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+          </div>
+          <div class="form-group">
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" placeholder="Enter your message" rows="5" required></textarea>
+          </div>
+          <button type="submit" class="btn">Submit</button>
+        </form>
+      </div>
+    </section>    
+  </main>
+
+  <!-- Footer Section -->
+  <footer>
+    <div class="footer-content">
+      <div class="footer-section about">
+        <h3>Smart Waste Management</h3>
+        <p>Transforming waste collection through IoT and AI technologies for a cleaner, more sustainable future.</p>
+      </div>
+      <div class="footer-section links">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#monitoring">Live Monitoring</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-section social">
+        <h3>Follow Us</h3>
+        <div class="social-links">
+          <a href="https://www.facebook.com/wastewarriors0" target="_blank" aria-label="Facebook"><img src="fbimage.avif" alt="Facebook"></a>
+          <a href="https://twitter.com/WAMCOmv" target="_blank" aria-label="Twitter"><img src="twtimg.jpg" alt="Twitter"></a>
+          <a href="https://www.instagram.com/wastemanagement/?hl=en" target="_blank" aria-label="Instagram"><img src="instaimg.webp" alt="Instagram"></a>
+          <a href="https://www.linkedin.com/company/wasteless" target="_blank" aria-label="LinkedIn"><img src="linkimg.png" alt="LinkedIn"></a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2023 Smart Waste Management. All rights reserved.</p>
+      <p class="sustainability">We're committed to sustainable digital practices.</p>
+    </div>
+  </footer>
+
+
+
+  <!-- Support Chat Container -->
+  <div id="support-container">
+    <div id="support-header">
+      <h3>Smart Waste Support</h3>
+      <button id="close-support" aria-label="Close Chat">×</button>
+    </div>
+    <div id="support-messages">
+      <div class="message support">Hello! How can we help you today?</div>
+    </div>
+    <div id="support-input-container">
+      <input type="text" id="support-input" placeholder="Type your message...">
+      <button id="send-support-button">Send</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+    
+  </body>
+  
+  </html>
